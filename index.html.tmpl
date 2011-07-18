@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="linux, lug@iitd, iitd, linux, open source , india , mailing list , foss india" />
+	<meta name="description" content="Planet LUG@IITD." />
+	<meta name="robots" content="index, follow" />
+
+	<title>Planet LUG@IITD</title>
+	
+	<link rel="stylesheet" type="text/css" href="libs/common.css" />
+	<link rel="stylesheet" type="text/css" href="libs/planet.css" />
+	
+	<!-- Accessibility ubuntu-it -->
+	<script type="text/javascript" src="http://ubuntu-it.org/sites/all/themes/light-drupal-theme/js/cookies.js"></script>
+    <script type="text/javascript" src="http://ubuntu-it.org/sites/all/themes/light-drupal-theme/js/accessibility.js"></script>
+    
+    <script type="text/javascript" src="libs/jquery-1.6.1.min.js"></script> 
+    <script type="text/javascript" src="libs/main.js"></script>
+	
+	
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="libs/common_ie.css" />
+	<![endif]-->
+</head>
+
+<body>
+		<!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/htdocs/common/css/msie6.css"> 
+        <div align="center" style="clear:both;">
+          <font color="#fff">
+            <b> La visualizzazione di questo sito &egrave; 
+            ottimizzata per IE7 e Firefox
+            </b>
+          </font>
+        </div>
+        <![endif]--> 
+        
+	<!-- Sub Header -->
+          <div id="subheader">
+            <div class="container">
+              <div class="container-inside">
+              <ul class="links secondary-links">
+                <li><a href="http://www.lug-iitd.org/" title="Wiki">Wiki</a></li>
+                <li class="active"><a href="http://planet.lug-iitd.org/" title="Planet">Planet</a></li>
+                <li><a href="http://groups.google.com/group/iitdlug" title="Mailing List">Mailing List</a></li>
+                <li><a href="http://lug-iitd.posterous.com/" title="Blog">Blog</a></li>
+                <li><a href="http://www.lug-iitd.org/Main_Page/Projects" title="Projects">Projects</a></li>
+</ul>                                               
+              </div>
+            </div>
+          </div>
+
+            
+             
+            
+            
+    <!-- Content -->
+    <div id="content">
+      <div class="container">
+      <div>
+			
+<!-- Inzio Planet -->
+			
+<div id="sidebar" class="force-accessibility">  
+    <div class="container">
+	    <h1>Planet LUG@IITD</h1>  
+		    <p>A complete feed is available in any of your favourite syndication formats: <a href="rss20.xml">RSS 2.0</a>, <a href="rss10.xml">RSS 1.0</a>, <a href="opml.xml">OPML</a> and <a href="foafroll.xml">FOAF</a>.</p>
+    </div>
+    <div class="container">
+	    <h1>Subscriptions</h1>  
+		    <p>List of included blogs : </p>
+		    <ul>
+			    <TMPL_LOOP Channels>
+					    <li>
+							<a class="feed-url" href="<TMPL_VAR url ESCAPE="HTML">" title="(feed)"><img src="libs/img/feed-fake.gif" alt="(feed)" /></a> <a  class="feed-name"  <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+						</li>
+			    </TMPL_LOOP>
+		    </ul>
+		    </div>
+		    
+		    <div id="contacts">
+		        <div class="container">
+		            <h1>Disclosures</h1>
+		                <p>Theme taken from : <a href="http://planet.ubuntu-it.org/">planet ubuntu-it/</a>. Theme : <a href="http://en.leoiannacone.com/2011/06/planet-ubuntu-it-gets-new-theme/">Credit</a> </p>
+		                <p>
+		                <strong>Last blog aggreated on :</strong><br><span ><TMPL_VAR date></span></p>
+                            <p class="copyright"> Powered By : 
+                            <a href="http://www.planetplanet.org/">Planet</a> <br />
+            </div>
+            <div id="return_top"><a href="#top">#top</a></div>
+      </div>
+
+</div><!-- end sidebar-->
+
+
+<a name="top"></a>
+<div id="thebody">
+
+<TMPL_LOOP Items>
+
+	<TMPL_IF new_date>
+		<h3 class="todaysDate force-accessibility"><span><TMPL_VAR new_date></span></h3>
+	</TMPL_IF>
+    <div class="post-content-top"> </div>
+	<div class="hentry post post-content">
+		<div class="postHeader">
+<TMPL_IF channel_face>
+	<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" alt="">
+<TMPL_ELSE>
+	<img class="face" src="images/nobody.png" alt="">
+</TMPL_IF>
+
+			<h2 class="entry-title"><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR title></a></h2>
+
+<h3><TMPL_VAR channel_name></h3>
+
+			<div class="clearBoth"></div>
+		</div>
+		<div class="entry-content">
+			<TMPL_VAR content>
+			<div class="clearBoth"></div>
+		</div>
+		<div class="entry-utility">
+			<span class="cat-links"><a href="<TMPL_VAR link ESCAPE="HTML">"><span ><TMPL_VAR date></span> <TMPL_IF category> nella categoria <TMPL_VAR category></TMPL_IF></a></span>
+		</div>
+	</div><!-- .post -->
+    <div class="post-content-bottom"> </div>
+</TMPL_LOOP>
+
+
+</div> <!-- thebody -->
+
+
+<!-- Fine Planet -->
+			</div>
+			
+			
+  </div>   
+
+    </div>
+
+  <script type="text/javascript">
+    main();
+  </script>      
+  <script type="text/javascript">
+    WebFontConfig = { 
+      google: { families: [ 'Ubuntu' ] } 
+    };  
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s); 
+    })();
+  </script>
+  </body>
+</html>
+
+

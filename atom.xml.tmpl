@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title><TMPL_VAR name></title>
+	<!--<link rel="self" type="text/atom" href=""/>-->
+	<link rel="alternate" type="text/html" href="<TMPL_VAR link ESCAPE="HTML">"/>
+	<id></id>
+	<updated><TMPL_VAR date_iso></updated>
+	<generator uri="http://www.planetplanet.org/"><TMPL_VAR generator ESCAPE="HTML"></generator>
+
+<TMPL_LOOP Items>
+	<entry>
+		<title><TMPL_VAR channel_name><TMPL_IF title>: <TMPL_VAR title></TMPL_IF></title>
+		<link rel="alternate" type="text/html" href="<TMPL_VAR link ESCAPE="HTML">"/>
+		<id><TMPL_VAR id ESCAPE="HTML"></id>
+		<updated><TMPL_VAR date_iso></updated>
+		<content type="html">
+		    <TMPL_IF channel_face ESCAPE="HTML">
+	        &lt;img src="http://planet.ubuntu-it.org/images/<TMPL_VAR channel_face>" alt="" align="right"&gt; 
+                <TMPL_ELSE ESCAPE="HTML">
+	        &lt;img src="http://planet.ubuntu-it.org/images/nobody.png" alt="" align="right"&gt;
+            </TMPL_IF>
+		<TMPL_VAR content ESCAPE="HTML">
+		</content>
+		<author>
+<TMPL_IF author>
+			<name><TMPL_VAR author></name>
+<TMPL_ELSE>
+			<name><TMPL_VAR channel_name></name>
+</TMPL_IF>
+			<uri><TMPL_VAR channel_link></uri>
+		</author>
+	</entry>
+
+</TMPL_LOOP>
+</feed>

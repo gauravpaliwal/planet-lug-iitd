@@ -1,0 +1,310 @@
+/* Start entries From planet.ubuntu.com */
+
+img {
+    border: none;
+}
+
+#container
+{
+	margin: 0 0 0 20px;
+	width: 700px;
+	float: left;
+}
+
+#secondary
+{
+	margin: 40px 20px 0 0;
+	width: 224px;
+	float: right;
+}
+
+.post *
+{
+    max-width:710px;
+}
+
+
+.post .postHeader {
+}
+
+.post .postHeader h2
+{
+	width: 560px;
+	float: left;
+	margin-bottom: 4px;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	text-shadow: none;
+	margin: 0;
+}
+
+.post .postHeader h3
+{
+	width: 560px;
+	float: left;
+	color: #aea79f;
+	margin-bottom: 16px;
+	margin: 0 0 24px;
+	text-shadow: none;
+}
+
+.post .postHeader h2.entry-title,
+.post .postHeader h2.entry-title a
+{
+	color: #333333;
+}
+.post .postHeader img
+{
+	float: right;
+	max-height: 56px;
+	padding-top: 4px;
+}
+
+.post .entry-content
+{
+	border-bottom: 1px dotted #aea79f;
+	padding-bottom: 8px;
+	clear: both;
+}
+
+.post .entry-content p
+{
+/*	clear: both; */
+}
+
+.post .entry-content img
+{
+}
+
+.post .entry-utility
+{
+	margin: 8px 0 0;
+	text-align: right;
+}
+
+.post .entry-utility .cat-links a
+{
+	color: #888;
+}
+
+.xoxo
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.widgetcontainer
+{
+	background: #fff;
+	margin: 0 0 16px 0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 0 0 1em 0;
+	-moz-box-shadow: 0px 2px 2px #CCC;
+	-webkit-box-shadow: 0px 2px 3px #CCC;
+	box-shadow: 0px 2px 3px #CCC;
+}
+
+.widgetcontainer .widgettitle
+{
+	padding: 10px 8px;
+	background: url("/images/sidebox_stripes.png");
+	-moz-border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-top-right-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-size: 18px;
+}
+
+.widgetcontainer p
+{
+	margin: 0 8px 1em 8px;
+}
+
+.widgetcontainer p:last-child
+{
+	margin: 0 8px;
+}
+
+.widgetcontainer a
+{
+	color: #333;
+}
+
+.widgetcontainer p a
+{
+	text-decoration: underline;
+}
+
+.widgetcontainer ul
+{
+	margin: 0 8px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.widgetcontainer ul li
+{
+	padding: 6px 0;
+	border-bottom: 1px dotted #aea79f;
+}
+
+.widgetcontainer ul li:last-child
+{
+	border: 0;
+}
+
+
+/* End entries From planet.ubuntu.com */
+
+/* Custom */
+
+/* Sidebar */
+
+body {
+    margin: 0;
+}
+
+#content .container, div.box-content {
+    background: none;
+}
+
+#content > .container > div {
+    margin: 0;
+    padding: 0;
+}
+
+#thebody {
+    float: left;
+    width: 740px;
+}
+
+.post-content-bottom {
+    background: url("img/box-bottom-top.png") no-repeat scroll center bottom transparent;
+    height: 12px;
+    margin-bottom: 5px;
+    padding: 0;
+    width: 100%;
+}
+
+.post-content-top {
+    background: url("img/box-bottom-top.png") no-repeat scroll center top transparent;
+    height: 10px;
+    padding: 0;
+    width: 100%;
+    clear: both;
+}
+
+.post-content {
+    background: url("img/box-content.png") repeat-y scroll center top transparent;
+    padding: 0 15px;
+}
+
+#sidebar {
+/*	Sfondo colorato tipo menu del wiki ? */
+/*	-webkit-border-radius:4px;*/
+/*	-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3);*/
+/*	-moz-border-radius:4px;*/
+/*	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3);*/
+/*	background:#ECECEC none repeat scroll 0 0;*/
+	float:right;
+	font-size:0.8em;
+    margin-top: 76px;
+	padding:0 1em 1em;
+	width: 220px;
+	position:relative;
+}
+
+#sidebar .container {
+    background: none repeat scroll 0 0 #666666;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #999999;
+    -moz-box-shadow: 0 1px 2px #999999;
+    -webkit-box-shadow: 0 1px 2px #999999;
+    color: #EEEEEE;
+    margin-bottom: 19px;
+    padding: 10px; 
+    width: auto;
+    text-shadow: 1px 1px 1px #222222;
+}
+
+#sidebar h1 {
+    background-color: transparent;
+    font-size: 2.2em;
+    margin-top: 0.3em;
+    text-align: center;
+    text-shadow: none;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 1px #222222;
+}
+
+#sidebar a {
+	color:#F2582D;
+}
+
+#sidebar ul{
+     margin: 0.8em; 
+     padding-left:0;
+}
+
+#sidebar li {
+	list-style: none;
+	background:transparent url(img/feed.png) no-repeat scroll left top;
+}
+
+#sidebar li:hover {
+	background:transparent url(img/feed-hover.png) no-repeat scroll left top;
+}
+
+#sidebar li a {
+	color: #F2582D;
+}
+
+#sidebar li a.feed-name {
+	color:inherit;
+	margin-left:5px;
+	vertical-align:super;
+/*	font-weight: bold;*/
+}
+
+#sidebar li a.feed-name:hover {
+/*	border-bottom:1px solid #F2582D;*/
+	text-decoration:underline;
+}
+
+
+
+h3.todaysDate {
+    font-size: 1.8em;
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+.fixed {
+    position: fixed;
+    /*width: 198px !important; */
+    width: 220px !important;
+    top:10px;
+}
+
+p.copyright {
+    font-size: 10px;
+    text-align: center;
+}
+
+#return_top {
+    width: 100%;
+    text-align: center;
+}
+
+#return_top a {
+    color: #333333;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+/* IE 6 and below */
+#page-border-left-repeat {
+	padding: 0 0 0 7px;
+}
+
+#page-border-right-top {
+	right: 3.9%;
+}
+
+#page-border-left-bottom {
+	bottom: 18px;
+}
+
+#page-border-right-bottom {
+	bottom: 18px;
+	right: 3.9%;
+}
+
+#page-border-bottom-repeat {
+	height:30px;
+}
+
+.rightheader {
+	margin-top: -5px;
+	height: 22px;
+}
+
+.rightheader img {
+	margin-top: 0px;
+}
+
+#sfondobarra {
+	padding-left:5%;
+}
+
+#pulsante {
+	right:-3.8%;
+}
+
+#bodyarea {
+	height: 270px;
+}
